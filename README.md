@@ -253,4 +253,13 @@ pip3 install -r requirements.txt
 python3 -m bench.bench
 python3 -m streamlit run dashboard/streamlit_app.py
 ```
+--------------
+### extra but usefull cmds
 
+export AZURE_OPENAI_API_KEY="your_key"
+
+export AWS_ACCESS_KEY_ID="your_key"
+
+export AWS_SECRET_ACCESS_KEY="your_secret"
+
+export AWS_DEFAULT_REGION="us-east-1"
