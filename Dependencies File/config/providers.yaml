@@ -1,0 +1,30 @@
+# Declare providers here. Use type: mock for quick, reproducible results.
+# Switch to type: http with real endpoints later.
+providers:
+  - name: aws-mock
+    type: mock
+    price_per_1k_tokens: 0.50
+    mock_latency_ms_mean: 650
+    mock_latency_ms_jitter: 180
+    mock_success_rate: 0.98
+
+  - name: azure-mock
+    type: mock
+    price_per_1k_tokens: 0.55
+    mock_latency_ms_mean: 520
+    mock_latency_ms_jitter: 160
+    mock_success_rate: 0.97
+
+  - name: gcp-mock
+    type: mock
+    price_per_1k_tokens: 0.48
+    mock_latency_ms_mean: 590
+    mock_latency_ms_jitter: 150
+    mock_success_rate: 0.995
+
+# Example of real HTTP endpoint (uncomment and edit)
+#  - name: aws-bedrock-llama31
+#    type: http
+#    base_url: https://your-bedrock-proxy-or-endpoint/invoke
+#    auth_header: "x-api-key: YOUR_KEY"
+#    price_per_1k_tokens: 0.60
